@@ -1,0 +1,57 @@
+<!doctype html>
+<div>
+<h1>Gestión de Productos</h1>
+<p class="slogan">Agregar / Editar productos</p>
+</div>
+</div>
+<nav class="main-nav">
+<a href="index.html">Inicio</a>
+<a href="gestion.html">Gestión</a>
+<a href="ventas.html">Ventas</a>
+</nav>
+</header>
+
+
+<main class="container">
+<!-- Formulario para agregar/editar productos -->
+<section class="gestion-form">
+<h2>Formulario de Producto</h2>
+
+
+<!-- Comentario: el botón "Guardar" es simulado — sin JS ni backend -->
+<form class="form-producto">
+<label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre" placeholder="Ej: Cuaderno A4" required>
+
+
+<label for="rubro">Rubro</label>
+<select id="rubro" name="rubro">
+<option value="kiosco">Kiosco</option>
+<option value="libreria">Librería</option>
+<option value="regaleria">Regalería</option>
+</select>
+
+
+<label for="precio">Precio</label>
+<input type="number" id="precio" name="precio" step="1" min="0" value="0">
+
+
+<label for="stock">Stock</label>
+<input type="number" id="stock" name="stock" step="1" min="0" value="0">
+
+
+<button type="button" class="btn guardar">Guardar</button>
+<button type="reset" class="btn cancelar">Cancelar</button>
+</form>
+
+
+<p class="help">(Botón simulado — sin funcionalidad. En un TP con JS, aquí iría la lógica para añadir/editar.)</p>
+</section>
+</main>
+
+
+<footer>
+<p>&copy; 2025 Multirubro La Esquina.</p>
+</footer>
+</body>
+</html>
